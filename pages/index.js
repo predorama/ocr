@@ -37,14 +37,19 @@ const App = () => {
         body: JSON.stringify({ imageUrl }),
       });
 
+      // Log the raw response for debugging
+      const rawResponse = await response.text();
+      console.log("Raw API Response:", rawResponse);
+
       if (!response.ok) {
-        const errorData = await response.json(); // Parse error response
-        console.error("API Error:", errorData); // Debugging
-        throw new Error(errorData.error || "Ошибка при обработке изображения");
+        // Log the raw error response
+        console.error("API Error Response:", rawResponse);
+        throw new Error(rawResponse || "Ошибка при обработке изображения");
       }
 
-      const data = await response.json();
-      console.log("API Response:", data); // Debugging
+      // Parse the JSON response
+      const data = JSON.parse(rawResponse);
+      console.log("API Response Data:", data); // Debugging
       setJsonFilename(data.jsonFilename); // Set the JSON filename
     } catch (error) {
       console.error("Ошибка при обработке изображения:", error);
