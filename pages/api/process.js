@@ -42,15 +42,6 @@ export default async function handler(req, res) {
     const jsonFilename = await runOCRWithRetry(imagePath);
     console.log('OCR result saved as:', jsonFilename); // Debugging
 
-    // Move the OCR result JSON file to the `public/ocr_results` folder
-    const ocrResultsDir = path.join(process.cwd(), 'public', 'ocr_results');
-    await fs.mkdir(ocrResultsDir, { recursive: true });
-
-    const sourcePath = path.join(uploadsDir, jsonFilename);
-    const destinationPath = path.join(ocrResultsDir, jsonFilename);
-    await fs.rename(sourcePath, destinationPath);
-    console.log('OCR result moved to:', destinationPath); // Debugging
-
     // Delete the temporary image file
     try {
       await fs.unlink(imagePath);
