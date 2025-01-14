@@ -25,32 +25,35 @@ const App = () => {
   const handleProcess = async () => {
     console.log("Image URL:", imageUrl); // Debugging
     if (!imageUrl) return;
-  
+
     setIsProcessing(true); // Start loading
-    setError(null); // Reset error state
-  
     try {
-      console.log("Sending image to background function..."); // Debugging
-      const response = await fetch("/api/ocr-background", {
+      console.log("Sending image to API..."); // Debugging
+      const response = await fetch("/api/process", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({ imageUrl }),
       });
-  
+
+      // Log the raw response for debugging
+      const rawResponse = await response.text();
+      console.log("Raw API Response:", rawResponse);
+
       if (!response.ok) {
-        throw new Error("Ошибка при запуске фоновой задачи OCR");
+        // Log the raw error response
+        console.error("API Error Response:", rawResponse);
+        throw new Error(rawResponse || "Ошибка при обработке изображения");
       }
-  
-      const data = await response.json();
-      console.log("Background function response:", data); // Debugging
-  
-      // Notify the user that the OCR task has started
-      alert("OCR task started. Check the console for updates.");
+
+      // Parse the JSON response
+      const data = JSON.parse(rawResponse);
+      console.log("API Response Data:", data); // Debugging
+      setJsonFilename(data.jsonFilename); // Set the JSON filename
     } catch (error) {
-      console.error("Ошибка при запуске фоновой задачи OCR:", error);
-      setError(error.message || "Ошибка при запуске фоновой задачи OCR. Пожалуйста, попробуйте снова.");
+      console.error("Ошибка при обработке изображения:", error);
+      alert(error.message || "Ошибка при обработке изображения. Пожалуйста, попробуйте снова.");
     } finally {
       setIsProcessing(false); // Stop loading
     }

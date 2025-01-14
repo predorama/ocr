@@ -1,0 +1,107 @@
+[
+  {
+    "": "",
+    "**Test**": "---",
+    "**Result**": "---",
+    "**Reference Range**": "---",
+    "**Unit**": "---"
+  },
+  {
+    "": "",
+    "**Test**": "**Total Protein**",
+    "**Result**": "71.5",
+    "**Reference Range**": "64 - 83",
+    "**Unit**": "g/L"
+  },
+  {
+    "": "",
+    "**Test**": "**Albumin**",
+    "**Result**": "5.8",
+    "**Reference Range**": "2.8 - 8.3",
+    "**Unit**": "g/L"
+  },
+  {
+    "": "",
+    "**Test**": "**Globulin**",
+    "**Result**": "45 - 115",
+    "**Reference Range**": "",
+    "**Unit**": "g/L"
+  },
+  {
+    "": "",
+    "**Test**": "**Creatinine**",
+    "**Result**": "104.3",
+    "**Reference Range**": "3.5 - 21",
+    "**Unit**": "μmol/L"
+  },
+  {
+    "": "",
+    "**Test**": "**Bilirubin Total**",
+    "**Result**": "17.3",
+    "**Reference Range**": "2.9 - 6.2",
+    "**Unit**": "μmol/L"
+  },
+  {
+    "": "",
+    "**Test**": "**Cholesterol**",
+    "**Result**": "7.4",
+    "**Reference Range**": "3.9 - 6.4",
+    "**Unit**": "mmol/L"
+  },
+  {
+    "": "",
+    "**Test**": "**Glucose**",
+    "**Result**": "6.60",
+    "**Reference Range**": "3.4 - 5.6",
+    "**Unit**": "mmol/L"
+  },
+  {
+    "": "",
+    "**Test**": "**Calcium**",
+    "**Result**": "4.10",
+    "**Reference Range**": "135 - 148",
+    "**Unit**": "mmol/L"
+  },
+  {
+    "": "",
+    "**Test**": "**Sodium**",
+    "**Result**": "138.0",
+    "**Reference Range**": "0 - 50",
+    "**Unit**": "mmol/L"
+  },
+  {
+    "": "",
+    "**Test**": "**Anion Gap**",
+    "**Result**": "10.2",
+    "**Reference Range**": "0 - 50",
+    "**Unit**": "mmol/L"
+  },
+  {
+    "": "",
+    "**Test**": "**AcAT**",
+    "**Result**": "27.5",
+    "**Reference Range**": "1 - 378",
+    "**Unit**": "U/L"
+  },
+  {
+    "": "",
+    "**Test**": "**LDH**",
+    "**Result**": "201.0",
+    "**Reference Range**": "0 - 294",
+    "**Unit**": "U/L"
+  },
+  {
+    "": "",
+    "**Test**": "**Creatine Kinase**",
+    "**Result**": "200.6",
+    "**Reference Range**": "0 - 24",
+    "**Unit**": "U/L"
+  },
+  {
+    "": "",
+    "**Test**": "**MB Fraction of CK**",
+    "**Result**": "28.5",
+    "**Reference Range**": "",
+    "**Unit**": "%"
+  }
+]

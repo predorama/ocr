@@ -1,0 +1,86 @@
+[
+  {
+    "": "",
+    "**Component**": "---",
+    "**Value**": "---",
+    "**Reference Range**": "---"
+  },
+  {
+    "": "",
+    "**Component**": "Общий белок",
+    "**Value**": "71.5",
+    "**Reference Range**": "64 - 83"
+  },
+  {
+    "": "",
+    "**Component**": "Мочевина",
+    "**Value**": "5.8",
+    "**Reference Range**": "2.8 - 8.3"
+  },
+  {
+    "": "",
+    "**Component**": "Креатинин",
+    "**Value**": "104.3",
+    "**Reference Range**": "45 - 115"
+  },
+  {
+    "": "",
+    "**Component**": "Билирубин общий",
+    "**Value**": "17.3",
+    "**Reference Range**": "3.5 - 21"
+  },
+  {
+    "": "",
+    "**Component**": "Холестерин общий",
+    "**Value**": "7.4",
+    "**Reference Range**": "2.9 - 6.2"
+  },
+  {
+    "": "",
+    "**Component**": "Глюкоза сывороточная",
+    "**Value**": "6.60",
+    "**Reference Range**": "3.4 - 5.6"
+  },
+  {
+    "": "",
+    "**Component**": "Калий",
+    "**Value**": "4.10",
+    "**Reference Range**": "3.4 - 5.6"
+  },
+  {
+    "": "",
+    "**Component**": "Натрий",
+    "**Value**": "138.0",
+    "**Reference Range**": "135 - 148"
+  },
+  {
+    "": "",
+    "**Component**": "AnAT",
+    "**Value**": "10.2",
+    "**Reference Range**": "0 - 50"
+  },
+  {
+    "": "",
+    "**Component**": "AcAT",
+    "**Value**": "27.5",
+    "**Reference Range**": "0 - 50"
+  },
+  {
+    "": "",
+    "**Component**": "Лактат дегидрогеназа (ЛДГ)",
+    "**Value**": "201.0",
+    "**Reference Range**": "1 - 378"
+  },
+  {
+    "": "",
+    "**Component**": "Креатинфосфокиназа (КФК)",
+    "**Value**": "200.6",
+    "**Reference Range**": "0 - 294"
+  },
+  {
+    "": "",
+    "**Component**": "MB - фракция КФК",
+    "**Value**": "28.5",
+    "**Reference Range**": "0 - 24"
+  }
+]

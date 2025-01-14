@@ -1,12 +1,10 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-Register on https://www.together.ai/ and get TOGETHER_API_KEY and put it into .env in root!!!
+
 ## Getting Started
-First install dependencies:
-npm install
-Second, run the development server:
+
+First, run the development server:
 
 ```bash
-npm install
 npm run dev
 # or
 yarn dev
