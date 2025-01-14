@@ -5,22 +5,22 @@ const ImageUpload = ({ onUpload }) => {
   const [image, setImage] = useState(null);
   const [isDragging, setIsDragging] = useState(false);
 
-  // Handle file selection (browse or drag-and-drop)
+  // Обработка выбора файла (через выбор или перетаскивание)
   const handleFile = (file) => {
     if (file && file.type.startsWith("image/")) {
       const reader = new FileReader();
       reader.onloadend = () => {
-        console.log("FileReader result (base64):", reader.result); // Debugging
-        setImage(reader.result); // Set the image preview
-        onUpload(reader.result); // Pass the base64 string to the parent component
+        console.log("Результат FileReader (base64):", reader.result); // Отладка
+        setImage(reader.result); // Установка превью изображения
+        onUpload(reader.result); // Передача строки base64 в родительский компонент
       };
       reader.readAsDataURL(file);
     } else {
-      alert("Please upload a valid image file.");
+      alert("Пожалуйста, загрузите корректный файл изображения.");
     }
   };
 
-  // Handle drag-and-drop events
+  // Обработка событий перетаскивания
   const handleDragOver = (e) => {
     e.preventDefault();
     setIsDragging(true);
@@ -34,20 +34,20 @@ const ImageUpload = ({ onUpload }) => {
     e.preventDefault();
     setIsDragging(false);
     const file = e.dataTransfer.files[0];
-    console.log("Dropped file:", file); // Debugging
+    console.log("Перетащенный файл:", file); // Отладка
     handleFile(file);
   };
 
-  // Handle file input change (browse)
+  // Обработка изменения файла через выбор (браузер)
   const handleFileChange = (e) => {
     const file = e.target.files[0];
-    console.log("Selected file:", file); // Debugging
+    console.log("Выбранный файл:", file); // Отладка
     handleFile(file);
   };
 
   return (
     <div className="p-6 border-2 border-gray-300 rounded-lg max-w-md mx-auto">
-      {/* Drag-and-drop area and browse button */}
+      {/* Область для перетаскивания и кнопка выбора файла */}
       <div
         className={`p-6 border-2 border-dashed ${
           isDragging ? "border-blue-500 bg-blue-50" : "border-gray-300 bg-gray-50"
@@ -82,13 +82,13 @@ const ImageUpload = ({ onUpload }) => {
             />
           </svg>
           <p className="text-gray-600">
-            Drag and drop an image or{" "}
-            <span className="text-blue-500 hover:text-blue-600">browse</span>
+            Перетащите изображение или{" "}
+            <span className="text-blue-500 hover:text-blue-600">выберите файл</span>
           </p>
         </label>
       </div>
 
-      {/* Image preview below the drag-and-drop area */}
+      {/* Превью изображения под областью перетаскивания */}
       {image && (
         <div className="mt-4 p-4 border-2 border-gray-300 rounded-lg">
           <div className="flex justify-center">
@@ -96,19 +96,19 @@ const ImageUpload = ({ onUpload }) => {
               src={image}
               alt="Preview"
               className="rounded-lg shadow-lg"
-              style={{ width: "400px", height: "auto" }} // Fixed width of 400px
+              style={{ width: "400px", height: "auto" }} // Фиксированная ширина 400px
             />
           </div>
-          {/* Clear button */}
+          {/* Кнопка очистки */}
           <div className="flex justify-center mt-4">
             <button
               onClick={() => {
-                setImage(null); // Clear the image preview
-                onUpload(null); // Notify the parent component
+                setImage(null); // Очистка превью изображения
+                onUpload(null); // Уведомление родительского компонента
               }}
               className="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600"
             >
-              Clear Image
+              Очистить изображение
             </button>
           </div>
         </div>
@@ -117,9 +117,9 @@ const ImageUpload = ({ onUpload }) => {
   );
 };
 
-// Add PropTypes validation
+// Добавление проверки PropTypes
 ImageUpload.propTypes = {
-  onUpload: PropTypes.func.isRequired, // onUpload is a required function
+  onUpload: PropTypes.func.isRequired, // onUpload - обязательная функция
 };
 
 export default ImageUpload;

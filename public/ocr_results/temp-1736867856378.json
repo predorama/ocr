@@ -1,0 +1,114 @@
+[
+  {
+    "": "",
+    "Test": "---",
+    "Value": "---",
+    "Unit": "---",
+    "Reference Range": "---"
+  },
+  {
+    "": "",
+    "Test": "Total Protein",
+    "Value": "71.5",
+    "Unit": "g/L",
+    "Reference Range": "64-83"
+  },
+  {
+    "": "",
+    "Test": "Albumin",
+    "Value": "5.8",
+    "Unit": "g/L",
+    "Reference Range": "2.8-8.3"
+  },
+  {
+    "": "",
+    "Test": "Globulin",
+    "Value": "45-115",
+    "Unit": "g/L",
+    "Reference Range": ""
+  },
+  {
+    "": "",
+    "Test": "Creatinine",
+    "Value": "104.3",
+    "Unit": "μmol/L",
+    "Reference Range": "3.5-21"
+  },
+  {
+    "": "",
+    "Test": "Urea",
+    "Value": "17.3",
+    "Unit": "mmol/L",
+    "Reference Range": "2.9-6.2"
+  },
+  {
+    "": "",
+    "Test": "Cholesterol",
+    "Value": "7.4",
+    "Unit": "mmol/L",
+    "Reference Range": "3.9-6.4"
+  },
+  {
+    "": "",
+    "Test": "Triglycerides",
+    "Value": "6.60",
+    "Unit": "mmol/L",
+    "Reference Range": "3.4-5.6"
+  },
+  {
+    "": "",
+    "Test": "Glucose",
+    "Value": "4.10",
+    "Unit": "mmol/L",
+    "Reference Range": "135-148"
+  },
+  {
+    "": "",
+    "Test": "Sodium",
+    "Value": "138.0",
+    "Unit": "mmol/L",
+    "Reference Range": "0-50"
+  },
+  {
+    "": "",
+    "Test": "Potassium",
+    "Value": "10.2",
+    "Unit": "mmol/L",
+    "Reference Range": "0-50"
+  },
+  {
+    "": "",
+    "Test": "Anion Gap",
+    "Value": "27.5",
+    "Unit": "",
+    "Reference Range": ""
+  },
+  {
+    "": "",
+    "Test": "AcAT",
+    "Value": "",
+    "Unit": "",
+    "Reference Range": ""
+  },
+  {
+    "": "",
+    "Test": "Lactate Dehydrogenase (LDH)",
+    "Value": "201.0",
+    "Unit": "U/L",
+    "Reference Range": "1-378"
+  },
+  {
+    "": "",
+    "Test": "Creatine Kinase (CK)",
+    "Value": "200.6",
+    "Unit": "U/L",
+    "Reference Range": "0-294"
+  },
+  {
+    "": "",
+    "Test": "MB Fraction of CK",
+    "Value": "28.5",
+    "Unit": "U/L",
+    "Reference Range": "0-24"
+  }
+]
