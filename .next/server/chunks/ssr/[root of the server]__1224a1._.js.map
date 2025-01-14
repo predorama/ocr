@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 55, "column": 0}, "map": {"version":3,"sources":["file:///Users/predragvila/Desktop/ocr-app/pages/_app.js"],"sourcesContent":["// pages/_app.js\nimport '../styles/globals.css';\n\nfunction MyApp({ Component, pageProps }) {\n  return <Component {...pageProps} />;\n}\n\nexport default MyApp;"],"names":[],"mappings":"AAAA,gBAAgB;;;;;;;AAGhB,SAAS,MAAM,EAAE,SAAS,EAAE,SAAS,EAAE;IACrC,qBAAO,qKAAC;QAAW,GAAG,SAAS;;;;;;AACjC;uCAEe"}},
-    {"offset": {"line": 72, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
-}
